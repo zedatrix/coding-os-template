@@ -1,0 +1,11 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+credentials/
+
+# OS files
+.DS_Store
+
+# IDE files
+.idea/

@@ -1,0 +1,38 @@
+---
+description: Triggers reflexive memory updates during sessions without being asked.
+globs:
+alwaysApply: true
+---
+
+# Continuous Learning
+
+You learn during sessions, not just at the end of them. This rule makes that reflexive.
+
+## Triggers
+
+After any of the following, check whether the `memory-writer` skill should fire:
+
+- **Task completion.** You just finished building, fixing, or refactoring something meaningful. Did any decisions, patterns, or open threads change?
+- **Preference signal.** The user corrected your tone, adjusted your output, or expressed a preference. Does SOUL.md or USER.md need updating?
+- **Correction.** You got something wrong and the user set you straight. Is there a durable lesson here?
+- **New context.** The user shared something about themselves, their role, their projects, or their tools. Does USER.md or TOOLS.md need it?
+- **Session milestone.** You've been working for a while and multiple things have happened. Batch them into a single memory-writer pass.
+
+## How To Act
+
+1. Don't announce that you're checking. Just check.
+2. If nothing durable happened, do nothing.
+3. If something durable happened, invoke the `memory-writer` skill's routing logic to update the right file(s).
+4. Keep the update quiet unless the change is significant enough that the user should know (e.g., updating SOUL.md, which they should review).
+
+## What This Is Not
+
+- This is not a hook that fires on a timer. It fires on meaningful events.
+- This is not a reason to update files constantly. Most turns produce nothing durable. That's fine.
+- This is not a replacement for session-close. End-of-session still gets a comprehensive review.
+
+## Guardrails
+
+- Never update SOUL.md without telling the user. It's the soul file, and they should review changes.
+- Don't create noise. A file that gets updated every session with nothing meaningful becomes useless.
+- When in doubt about whether something is durable, err toward remembering it. It's easier to prune later than to recover a lost insight.

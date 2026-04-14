@@ -1,0 +1,15 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Ticket Planning Workflow
+
+When the user asks to "create a plan," "plan out a ticket," or similar in Plan mode, ALWAYS follow these steps before any planning work:
+
+1. **Fetch the ticket** from the tracker (Linear, ClickUp, etc.) using the appropriate API skill. Extract the full description, acceptance criteria, and labels.
+2. **Create a feature branch** from the current base branch. Include the ticket ID in the branch name so the tracker auto-links it. Naming: `feature/{TICKET-ID}-{kebab-case-title}`. Linear detects the issue ID in the branch name and links automatically; no API call needed.
+3. **Research the codebase** thoroughly. Read sibling files, existing patterns, tests, and related services. Search docs for version-specific guidance.
+4. **Present the plan** using CreatePlan, tailored for Cursor's composer model: clear file lists (create vs modify), specific modification points, concrete snippets, and test expectations.
+
+Do NOT skip branch creation. Do NOT start planning without the ticket context. Do NOT make file changes until the user confirms the plan.
