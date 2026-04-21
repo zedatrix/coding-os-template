@@ -23,10 +23,10 @@ Reusable internal capabilities as portable skill folders. See [skills/README.md]
 - **write-pr**: Draft PR descriptions from branch diffs and repository PR templates, or create/update PR bodies when asked. [skills/write-pr/SKILL.md](skills/write-pr/SKILL.md)
 
 ## commands
-Reusable chat command specs for recurring workflows. Store slash-style command definitions here when they should be portable across assistants or clients.
+Reusable command designs for Cursor workflows. Store Cursor-oriented slash-style command definitions here when they should be easy to copy into a Cursor setup.
 
-- **second-opinion**: Critique the latest plan version as an adversarial reviewer. [commands/second-opinion.md](commands/second-opinion.md)
-- **rebuttal**: Respond to the latest critique, decide what to accept, and produce the next plan version. [commands/rebuttal.md](commands/rebuttal.md)
+- **second-opinion**: Cursor command design for critiquing the latest plan version as an adversarial reviewer. [commands/second-opinion.md](commands/second-opinion.md)
+- **rebuttal**: Cursor command design for responding to the latest critique and producing the next plan version. [commands/rebuttal.md](commands/rebuttal.md)
 
 ## projects
 Project-specific context files. Each file captures the conventions, architecture patterns, domain knowledge, and personal preferences for a codebase the user works in. See [projects/README.md](projects/README.md) for the expected format.

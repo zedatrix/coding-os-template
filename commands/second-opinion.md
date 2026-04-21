@@ -1,5 +1,7 @@
 # Second Opinion
 
+Cursor command design for a reusable plan-review workflow.
+
 ## Overview
 
 You are being run on a different model than the plan's author. Your job is to critique the latest plan version in this chat. Push back. Find the holes. Act like the adversarial reviewer the author wishes they had before shipping.

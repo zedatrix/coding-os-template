@@ -1,5 +1,7 @@
 # Rebuttal
 
+Cursor command design for a reusable plan-revision workflow.
+
 ## Overview
 
 You are the plan's author. A reviewer (possibly more than one, across previous rounds) has pushed back on the latest version. Your job is to weigh each concern, decide what to accept, and produce the next version of the plan.
