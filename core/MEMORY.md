@@ -15,3 +15,7 @@ _Things you've noticed that aren't settled decisions. Label observations clearly
 ## Log
 
 _A dated factual record of meaningful work. Add entries under `### YYYY-MM-DD` headings._
+
+### 2026-04-21
+
+- Added a `commands/` directory to the template with reusable `second-opinion` and `rebuttal` command specs, and updated top-level docs to include the new folder.

@@ -8,6 +8,7 @@ Clone it, rename it, and tailor the core files to your own user, voice, tools, a
 
 ```
 coding-os-template/
+├── commands/              # Reusable chat command specs
 ├── core/                  # Assistant identity, memory, user context, tools
 │   ├── SOUL.md            # Persona, voice, behavioral defaults
 │   ├── MEMORY.md          # Durable session memory
@@ -23,6 +24,7 @@ coding-os-template/
 ## Principles
 
 - One assistant, many skills
+- Reusable commands for recurring chat workflows
 - Local-first where practical
 - Explicit permissions over hidden behavior
 - Durable memory over repeated re-explanation
@@ -33,6 +35,7 @@ coding-os-template/
 - Read [AGENTS.md](AGENTS.md) for repository-wide operating guidance
 - Fill in `core/SOUL.md`, `core/USER.md`, `core/TOOLS.md`, and `core/MEMORY.md`
 - Set up cold-start behavior for your client (see [Cold Start](#cold-start) below)
+- Review the reusable command specs in `commands/`
 - Read [skills/README.md](skills/README.md) for the skill structure
 - Read [projects/README.md](projects/README.md) for project context conventions
 - Read [templates/README.md](templates/README.md) for starter templates

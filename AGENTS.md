@@ -22,6 +22,12 @@ Reusable internal capabilities as portable skill folders. See [skills/README.md]
 - **find-skills**: Use when the user asks to find, compare, or install external skills. [skills/find-skills/SKILL.md](skills/find-skills/SKILL.md)
 - **write-pr**: Draft PR descriptions from branch diffs and repository PR templates, or create/update PR bodies when asked. [skills/write-pr/SKILL.md](skills/write-pr/SKILL.md)
 
+## commands
+Reusable chat command specs for recurring workflows. Store slash-style command definitions here when they should be portable across assistants or clients.
+
+- **second-opinion**: Critique the latest plan version as an adversarial reviewer. [commands/second-opinion.md](commands/second-opinion.md)
+- **rebuttal**: Respond to the latest critique, decide what to accept, and produce the next plan version. [commands/rebuttal.md](commands/rebuttal.md)
+
 ## projects
 Project-specific context files. Each file captures the conventions, architecture patterns, domain knowledge, and personal preferences for a codebase the user works in. See [projects/README.md](projects/README.md) for the expected format.
 
