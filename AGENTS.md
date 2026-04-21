@@ -22,6 +22,12 @@ Reusable internal capabilities as portable skill folders. See [skills/README.md]
 - **find-skills**: Use when the user asks to find, compare, or install external skills. [skills/find-skills/SKILL.md](skills/find-skills/SKILL.md)
 - **write-pr**: Draft PR descriptions from branch diffs and repository PR templates, or create/update PR bodies when asked. [skills/write-pr/SKILL.md](skills/write-pr/SKILL.md)
 
+## commands
+Reusable command designs for Cursor workflows. Store Cursor-oriented slash-style command definitions here when they should be easy to copy into a Cursor setup.
+
+- **second-opinion**: Cursor command design for critiquing the latest plan version as an adversarial reviewer. [commands/second-opinion.md](commands/second-opinion.md)
+- **rebuttal**: Cursor command design for responding to the latest critique and producing the next plan version. [commands/rebuttal.md](commands/rebuttal.md)
+
 ## projects
 Project-specific context files. Each file captures the conventions, architecture patterns, domain knowledge, and personal preferences for a codebase the user works in. See [projects/README.md](projects/README.md) for the expected format.
 
