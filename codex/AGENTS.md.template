@@ -1,0 +1,9 @@
+# Global Codex Cold Start
+
+On the first user message of every new Codex session or thread, before any normal user-facing reply, read and execute the cold-start workflow at `__CODING_OS_ROOT__/skills/session-start/SKILL.md`.
+
+Do not answer the user's request, including greetings or small talk, until that workflow has completed or failed.
+
+If the workflow completes, include the loaded-files confirmation required by `session-start`.
+
+If the workflow fails, report the failure briefly and stop.
