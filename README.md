@@ -65,16 +65,12 @@ Replace `/path/to/your-coding-os` with the absolute path to your local checkout.
 
 ### Codex
 
-Add a `developer_instructions` entry in `~/.codex/config.toml`:
+Install the global Codex cold-start instruction into `~/.codex/AGENTS.md`:
 
-```toml
-developer_instructions = """
-On the first user message of every new session, before any normal user-facing reply, execute the cold-start workflow at /path/to/your-coding-os/skills/session-start/SKILL.md.
-
-Do not answer the user's request, including greetings or small talk, until that workflow has completed or failed.
-
-If it fails, report the failure briefly and stop.
-"""
+```bash
+/path/to/your-coding-os/tools/codex-global-sync/sync.sh
 ```
 
-Replace `/path/to/your-coding-os` with the absolute path to your local checkout.
+This renders [codex/AGENTS.md.template](codex/AGENTS.md.template) with this checkout's absolute path and writes it to `~/.codex/AGENTS.md`.
+
+`developer_instructions` in `~/.codex/config.toml` may work for Codex CLI, but do not rely on it alone for Codex Desktop. Desktop-created threads may skip that config entry; `~/.codex/AGENTS.md` is the installed global instruction surface.
