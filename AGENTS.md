@@ -20,6 +20,7 @@ Reusable internal capabilities as portable skill folders. See [skills/README.md]
 - **session-start**: Required cold-start workflow at the beginning of every new session. [skills/session-start/SKILL.md](skills/session-start/SKILL.md)
 - **session-close**: Use when the user is signing off or ending a session. [skills/session-close/SKILL.md](skills/session-close/SKILL.md)
 - **find-skills**: Use when the user asks to find, compare, or install external skills. [skills/find-skills/SKILL.md](skills/find-skills/SKILL.md)
+- **create-user-story**: Use when creating, drafting, rewriting, or improving user stories, tickets, or epics for the active project. [skills/create-user-story/SKILL.md](skills/create-user-story/SKILL.md)
 - **write-pr**: Draft PR descriptions from branch diffs and repository PR templates, or create/update PR bodies when asked. [skills/write-pr/SKILL.md](skills/write-pr/SKILL.md)
 
 ## commands
